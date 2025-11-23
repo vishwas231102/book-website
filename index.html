@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracing Hidden Networks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Akira+Expanded:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('theme.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            min-height: 100vh;
+            overflow: auto;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: rgb(247,220,179);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            width: 100%;
+            max-width: 800px;
+        }
+        
+        h1 {
+            font-family: 'Akira Expanded', Arial, sans-serif;
+            font-weight: 900;
+            font-size: 1.6em;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+        
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 0.9em;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .devanagari {
+            font-family: 'Adobe Devanagari', 'Noto Sans Devanagari', sans-serif;
+            display: inline;
+            vertical-align: baseline;
+        }
+        
+        .content-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .header-section {
+            flex: 1;
+        }
+        
+        .text-section {
+            flex: 1;
+            margin-top: -25px;
+        }
+        
+        .video-container {
+            flex: 1;
+            max-width: 100%;
+            margin-top: 15px;
+        }
+        
+        video {
+            width: 100%;
+            max-width: 280px;
+            aspect-ratio: 9/16;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        
+        /* Mobile responsive styles */
+        @media screen and (max-width: 768px) {
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .content-flex {
+                gap: 25px;
+            }
+            
+            .text-section {
+                margin-top: -15px;
+            }
+            
+            .video-container {
+                margin-top: 12px;
+            }
+            
+            h1 {
+                font-size: 1.4em;
+                margin: 0;
+                line-height: 1.2;
+            }
+            
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 0.8em;
+                max-width: 100%;
+                line-height: 1.4;
+            }
+            
+            video {
+                max-width: 250px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .content {
+                padding: 15px 10px;
+            }
+            
+            .content-flex {
+                gap: 20px;
+            }
+            
+            .text-section {
+                margin-top: -10px;
+            }
+            
+            .video-container {
+                margin-top: 10px;
+            }
+            
+            h1 {
+                font-size: 1.2em;
+                margin: 0;
+            }
+            
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 0.75em;
+                max-width: 100%;
+            }
+    
+            video {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="content-flex">
+            <div class="header-section">
+                <h1>TRACING HIDDEN NETWORKS</h1>
+            </div>
+            <div class="text-section">
+                <p>A Case of Sarafa Bazar, <span class="devanagari">भुसावल</span></p>
+            </div>
+            <div class="video-container">
+                <video controls preload="metadata">
+                    <source src="video_new.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
